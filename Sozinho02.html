@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Treino sozinho</title>
+</head>
+<style>
+ div#area {
+
+text-align: center;
+line-height: 200px;
+height: 200px;
+width: 200px;
+background-color: darkmagenta;
+font: normal 25pt Arial
+} 
+div#local { 
+    text-align: center;
+    line-height: 200px;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    font: normal 25pt Arial;
+    color: brown;
+}
+
+
+</style>
+<body>
+    <div id="area">Primeira Janela</div>
+    <div id="local">Segunda Janela</div>
+
+
+</body>
+<script>
+var a = window.document.getElementById('area')
+a.addEventListener('click', clicar)
+a.addEventListener('mouseout', Sair)
+a.addEventListener('mouseenter', entrar)
+function clicar(){
+    a.innerText = 'clicou'
+a.style.background = 'red'
+}
+function entrar(){
+    a.innerText = 'dentro'
+    a.style.background = 'yellow'} 
+function Sair(){
+    a.innerText = 'fora'
+a.style.background = 'blue'
+}
+alert( 'Olá ')
+</script>
+<script>
+var b = document.getElementById('local')
+b.addEventListener('click', clicar)
+b.addEventListener('mouseout', Sair)
+b.addEventListener('mouseenter', entrar)
+function clicar(){
+    b.innerText = 'Dimensão 2'
+    b.style.background = 'green'
+}
+function entrar(){
+    b.innerText = 'Dimensão 1'
+    b.style.background = 'grey'
+}
+function Sair(){
+b.innerText = 'Dimensão 0'
+b.style.background = 'gold'
+}
+</script>
+</html>

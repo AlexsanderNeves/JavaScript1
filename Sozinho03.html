@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfândega</title>
+</head>
+<body><h1>Sistema de Aeroporto</h1>
+    Em qual país voce mora <input type="txtpaís" name="" id="txtpaís">
+    <input type="button" value="Analisar" onclick="caucular()">
+    <div id="res">
+
+    </div>
+    <script>
+        var txtpaís = document.querySelector('input#país')
+        var res = document.querySelector('div#res')
+        var país = String(txtpaís.value)
+        res.innerHTML = (`O País atural que voce veio é ${país}`)
+        if (país == Brasil || == estrangeiro){
+            res.innerHTML += 'Você é Brasileiro'
+        }else{
+            res.innerHTML += 'Você é estrangeiro's    
+        }
+
+
+    </script>
+    
+</body>
+</html>
